@@ -20,6 +20,7 @@ body {
   background-color: var(--primary-background);
   color: var(--main-text);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* NAVBAR STYLING */
@@ -30,7 +31,7 @@ nav {
   z-index: 1000;
   margin-top: 1.75rem;
   background: rgba(30, 41, 59, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   position: fixed;
   top: 20px;
   left: 50%;
@@ -120,6 +121,11 @@ nav {
     
 }   
 
+.CTA > a {
+  color: white;
+}
+
+
 .cv {
     background: transparent;
     height: 3rem;
@@ -159,6 +165,60 @@ nav {
     box-shadow: 0 0 60px rgba(81, 146, 252, 0.3);
     transform: scale(1.01);
 }
+
+
+/* ABOUT ME SECTION */
+
+.about-me {
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1200px;
+  width: 90%;
+  gap: 2rem;
+}
+
+.description {
+  padding: 0.8rem 0.8rem;
+  text-align: justify;
+
+}
+
+.location {
+  padding: 0.8rem 0.8rem;
+  text-align: justify;
+}
+
+.description, .location {
+  width: 100%;
+  background-color: var(--secondary-background);
+  border-radius: 0.75rem;
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 0 5px var(--secondary-background);
+  transition:  0.3s ease;
+}
+
+.h1-about {
+  color: var(--primary-accent);
+}
+
+.h1-location {
+  color: var(--primary-accent);
+}
+
+.description:hover, .location:hover {
+  transform: translateY(-0.5rem);
+  filter: drop-shadow(0 0 0.75rem var(--secondary-background));
+}
+
+.location-map {
+  margin: 2rem auto;
+  background-color: transparent;
+}
+
 
 
 
