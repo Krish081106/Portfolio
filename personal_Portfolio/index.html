@@ -37,10 +37,14 @@
     </nav>
 
     <!--HERO SECTION-->
-    <div class="hero">
+    <div class="hero" data-aos="fade-up">
       <div class="hero-text">
-        <h1 class="title">Hi, I'm Krish</h1>
-        <h2>Aspiring Full Stack Developer</h2>
+        <h1 class="title">
+          Hi,<span>I'm <span id="name"></span></span>
+        </h1>
+        <h2>
+          <span id="role"></span>
+        </h2>
         <p>Building Modern Web Experiences with Clean & Scalable Code</p>
 
         <button class="CTA"><a href="#projects">View Projects</a></button>
@@ -61,7 +65,7 @@
 
     <!-- ABOUT SECTION -->
 
-    <div class="about-me" id="about">
+    <div class="about-me" id="about" data-aos="fade-right">
       <div class="description">
         <h1 class="h1-about"><i class="fa-solid fa-id-card"></i> About Me</h1>
         <p>
@@ -108,7 +112,7 @@
     </div>
 
     <!--Skills SECTION-->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" data-aos="zoom-in">
       <h1><i class="fa-solid fa-code"></i> Skills</h1>
       <p>
         Technologies and tools I use to build modern and scalable web
@@ -158,14 +162,14 @@
       </div>
     </section>
 
-    <section id="projects" class="project">
+    <section id="projects" class="project" data-aos="fade-up">
       <h1 class="h1-projects">
         <i class="fa-solid fa-chart-line"></i>Projects
       </h1>
       <div class="project-flexbox">
         <div class="project-img">
             <img
-              src="/personal_Portfolio/assests/project-dashboard.png"
+              src="./assests/project-dashboard.png"
               alt="Screenshot of the Dashboard"
             />
           </div>
@@ -193,16 +197,25 @@
               <li>Chart.js</li>
               <li>Jira & Agile Methodologies (Scrum)</li>
             </ul>
-            <a href="
-https://se-project-gilt-three.vercel.app/
-" class="live-link" target="_blank">Live Preview</a>
+            <div class="links">
+              <a href="
+                  https://se-project-gilt-three.vercel.app/
+                  " class="live-link" target="_blank">Live Preview
+              </a>
+              <a href="https://github.com/Krish081106/SE-project" class="live-link" target="_blank">
+              GitHub Repository
+              </a>
+              <a href="https://youtu.be/9xcA-vk3vQk" target="_blank" class="live-link">
+              Demo Video
+              </a>
+            </div>
             </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-left">
 
   <h1>
     <i class="fa-solid fa-envelope"></i>
@@ -260,6 +273,21 @@ https://se-project-gilt-three.vercel.app/
   </p>
 
 </footer>
+    <div class="cursor-glow"></div>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+/>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="app.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
   </body>
 </html>

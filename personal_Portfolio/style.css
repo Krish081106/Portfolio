@@ -96,6 +96,12 @@ nav {
   margin-bottom: 1rem;
 }
 
+.hero-text h1 > span {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa, #3a72b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .hero-text h2 {
   font-size: 2rem;
   color: var(--primary-accent);
@@ -363,6 +369,13 @@ nav {
   display: inline-block;
 }
 
+.links {
+  margin: 2rem 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .live-link {
   padding: 0.8rem;
   background-color: transparent;
@@ -372,6 +385,7 @@ nav {
   border-radius: 0.5rem;
   transition: 0.3s ease;
   margin-top: 1.5rem;
+
 }
 
 .live-link:hover{
@@ -598,4 +612,21 @@ nav {
   .footer {
     padding: 2rem 1rem;
   }
+}
+
+.cursor-glow {
+    width: 250px;
+    height: 250px;
+    background: rgba(59, 130, 246, 0.2);
+
+    position: fixed;
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
 }
