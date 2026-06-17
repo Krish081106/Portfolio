@@ -20,10 +20,12 @@ body {
   background-color: var(--primary-background);
   color: var(--main-text);
   overflow-x: hidden;
+  scroll-margin-top: 100px;
 }
 
 html {
   scroll-behavior: smooth;
+  /* scroll-margin-top: 100px; */
 }
 
 /* NAVBAR STYLING */
